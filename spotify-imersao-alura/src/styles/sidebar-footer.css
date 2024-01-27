@@ -1,0 +1,172 @@
+body {
+    background-color: #000;
+    font-family: var(--font-dm-sans); /*variavel*/
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background-color: #000000;
+    padding: 12px; /*espaçamento que em cima/embaixo/dos lados 
+                    terao o mesmo 12px de espaçamento*/
+}
+
+.sidebar_navigation{
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16px; /*espaçamento*/
+}
+
+.logo{
+    background-color: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.logo img{ /*tag imagem que tem a div logo, se fosse logo,
+             img os valores declarados seriam para ambos*/
+    width: 80px;
+}
+
+.sidebar nav ul{
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+}
+
+.sidebar ul li{
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a { /*importante add o "a" -> mudar oq tem dentro dele*/
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600; /*para a grossura da fonte*/
+    font-size: 14px;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 8px;
+    display: flex; /*alterar o posicionamento de um objeto*/
+    justify-content: space-between; /*espaço justificado enttre objs*/
+    flex-direction: column; /*dividir em colunas*/
+    padding: 4px 8px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.library .library__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__button{
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 18px;
+}
+
+.library .library__button .fa{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.library__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__content .fa-plus{
+    margin: 24px 10px;
+}
+
+.section-playlist{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: 20px;
+}
+
+.section-playlist .section-playlist__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist__content .text{
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.section-playlist__content .title{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.section-playlist__content .subtitle{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.section-playlist__content .section-playlist__button{
+    display: flex;
+    padding: 10px 12px; /*espaçamento em todos os lados*/
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none; /*como é um botao tiramos as decorações*/
+    margin-top: 12px;
+    border: 8px;
+    width: 113px;
+}
+
+.sidebar .cookies{
+    margin: 25px 20px;
+}
+
+.sidebar .cookies a{
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.sidebar .cookies a:hover{
+    text-decoration: underline;
+}
+
+.languages .languages__button {
+    background-color: transparent;
+    border-radius: 9999px;
+    border: 1px solid #878787;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    padding: 8px;
+    width: 170px;
+    margin: 8px;
+    font-weight: bold;
+}
