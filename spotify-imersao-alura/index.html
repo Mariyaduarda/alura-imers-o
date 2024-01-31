@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--NOME + slogan na head da pág.-->
-    <title> Spotify | Web Player: Music for everyone</title>
+    <title> Spotify | Web Player: Música para todos</title>
     <!--o logo superior na pág. do spotify-->
     <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image">
     
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./src/styles/content.css">
     <link rel="stylesheet" href="./src/styles/vars.css">
     <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <!--media fica por ultimo, embaixo do main style-->
+    <link rel="stylesheet" href="./src/styles/media-queri.css">
     <!--linkando icons do font.awesome-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
 
@@ -101,14 +103,15 @@
                     </div>
 
             </nav>
-<!-- PLAYLIST -->
-<div class="playlist-container">
-    <div id="result-playlists">
-      <div class="playlist">
-        <!-- COLOCAR O BOM DIA | BOA TARDE | BOA NOITE -->
-        <h1 id="greeting"></h1>
-        <h2 class="session">Navegar por todas as seções</h2>
-      </div>
+
+    <!-- PLAYLIST -->
+    <div class="playlist-container">
+        <div id="result-playlists">
+        <div class="playlist">
+            <!-- COLOCAR O BOM DIA | BOA TARDE | BOA NOITE -->
+            <h1 id="greeting"> Bom dia</h1>
+            <h2 class="session">Navegar por todas as seções</h2>
+        </div>
 
       <!-- LIST ITEM 1 -->
       <div class="offer__scroll-container">
@@ -265,5 +268,7 @@
 
     <footer class="disclaimer-premium"> MARIAAAAA
     </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
